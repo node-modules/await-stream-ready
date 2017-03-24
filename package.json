@@ -1,0 +1,41 @@
+{
+  "name": "await-stream-ready",
+  "version": "1.0.0",
+  "description": "A promise waiting stream ready",
+  "dependencies": {
+    "isstream": "^0.1.2"
+  },
+  "devDependencies": {
+    "autod": "^2.8.0",
+    "egg-bin": "^1.10.3",
+    "egg-ci": "^1.6.0",
+    "eslint": "^3.18.0",
+    "eslint-config-egg": "^3.2.0",
+    "mz": "^2.6.0",
+    "spy": "^1.0.0"
+  },
+  "engines": {
+    "node": ">=4.0.0"
+  },
+  "scripts": {
+    "autod": "autod",
+    "test": "npm run lint -- --fix && npm run test-local",
+    "test-local": "egg-bin test",
+    "cov": "egg-bin cov",
+    "lint": "eslint .",
+    "ci": "npm run lint && npm run cov"
+  },
+  "ci": {
+    "version": "4, 6, 7",
+    "license": {
+      "fullname": "node-modules",
+      "year": "2017"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:node-modules/await-stream-ready.git"
+  },
+  "author": "popomore",
+  "license": "MIT"
+}
