@@ -53,7 +53,7 @@ const awaitWriteStream = require('await-stream-ready').write;
 
 async function write(srcStream, file) {
   const stream = srcStream.pipe(fs.createWriteStream(file));
-  await awaitReadStream(stream);
+  await awaitWriteStream(stream);
 }
 ```
 
@@ -61,4 +61,4 @@ async function write(srcStream, file) {
 
 ## License
 
-[MIT]
+[MIT](LICENSE)
