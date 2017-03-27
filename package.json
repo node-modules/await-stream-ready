@@ -2,9 +2,7 @@
   "name": "await-stream-ready",
   "version": "1.0.0",
   "description": "A promise waiting stream ready",
-  "dependencies": {
-    "isstream": "^0.1.2"
-  },
+  "dependencies": {},
   "devDependencies": {
     "autod": "^2.8.0",
     "egg-bin": "^1.10.3",
@@ -37,5 +35,9 @@
     "url": "git@github.com:node-modules/await-stream-ready.git"
   },
   "author": "popomore",
-  "license": "MIT"
+  "license": "MIT",
+  "files": [
+    "index.js",
+    "lib"
+  ]
 }
